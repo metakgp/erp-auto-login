@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "EncryptionHack",
+	"description": "Fuck You !",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "encryption_128.png",
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "encryption_16.png",
+		"128": "encryption_128.png",
+		"256": "encryption_256.png"
+	},
+	"content_scripts": [{
+        "matches": ["https://erp.iitkgp.ernet.in/SSOAdministration/login.htm*"],
+        "js":         ["encryptSHA256.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"contextMenus",
+		"activeTab",
+		"https://ajax.googleapis.com/",
+		"storage"
+	]
+}
