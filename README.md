@@ -20,4 +20,5 @@ Instructions
 	var question2 = "your_second_question_here";
 	var question3 = "your_third_question_here";
 ```
-3. To install this extension follow the instructions https://developer.chrome.com/extensions/getstarted#unpacked
+
+To install this extension follow the instructions https://developer.chrome.com/extensions/getstarted#unpacked
