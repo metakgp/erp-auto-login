@@ -31,7 +31,6 @@ chrome.storage.sync.get('ERPIITKGP_ERPLoginID', function (result1)
 							chrome.storage.sync.get('ERPIITKGP_question3', function (result8) 
 							{
 							    question3 = result8.ERPIITKGP_question3;
-								alert(ERPLoginID);
 								var rollNoInput = document.getElementById("user_id");
 								var ERPPasswordInput = document.getElementById("password");
 								var questionInput = document.getElementById("question");

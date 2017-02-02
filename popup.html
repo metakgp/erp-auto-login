@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head><title>ERP Auto login</title></head>
-<body>
+	<head>
+		<title>ERP Auto login</title>
+	</head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		body {
+    		min-width:450px;
+		}
+	</style>
+	<body>
 
-<input id="ERPLoginID" type="text" placeholder="Roll" value="" />
-<input id="ERPPassword" type="password" placeholder="Pass" value="" />
-<input id="answer1" type="password" placeholder="A1" value="" />
-<input id="answer2" type="password" placeholder="A2" value="" />
-<input id="answer3" type="password" placeholder="A3" value="" />
-<input id="question1" type="text" placeholder="Q1" value="" />
-<input id="question2" type="text" placeholder="Q2" value="" />
-<input id="question3" type="text"  placeholder="Q3" value="" />
-
-
-<button id="save">Save</button>
-<div id="status"></div>
-<script src="options.js"></script>
-</body>
+			<h3 style="text-align: center;">Enter your ERP credentials here</h3>
+			<div class="form-horizontal row">
+			<div class="well container">
+				<div class="form-group col-xs-7">
+					<input class="form-control" id="ERPLoginID" type="text" placeholder="Roll number" value="" />
+				</div>
+			<div class="form-group col-xs-6">
+				<input class="form-control" id="ERPPassword" type="password" placeholder="Password" value="" />
+			</div>
+			<div class="form-group col-xs-7">
+			<input class="form-control" id="question1" type="text" placeholder="Secret Question 1" value="" />
+			</div>
+			<div class="form-group col-xs-6">
+			<input class="form-control" id="answer1" type="password" placeholder="Secret Answer 1" value="" />
+			</div>
+			<div class="form-group col-xs-7">
+			<input class="form-control" id="question2" type="text" placeholder="Secret Question 2" value="" />
+			</div>
+			<div class="form-group col-xs-6">
+			<input class="form-control" id="answer2" type="password" placeholder="Secret Answer 2" value="" />
+			</div>
+			<div class="form-group col-xs-7">
+			<input class="form-control" id="question3" type="text"  placeholder="Secret Question 3" value="" />
+			</div>
+			<div class="form-group col-xs-6">
+			<input class="form-control" id="answer3" type="password" placeholder="Secret Answer 3" value="" />
+			</div>
+			<button class="btn btn-primary col-xs-offset-4" id="save">Save</button>
+			<button class="btn btn-primary" id="reset">Reset</button>
+			</div>
+			</div>
+			<div id="status" style="text-align: center;"></div>
+		</div>	
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="popup.js"></script>
+	</body>
 </html>
