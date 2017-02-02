@@ -1,21 +1,19 @@
 {
 	"manifest_version": 2,
 
-	"name": "EncryptionHack",
-	"description": "Fuck You !",
+	"name": "IITKGP ERP Auto-login",
+	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
 	"version": "1.0",
 	"browser_action": {
-		"default_icon": "encryption_128.png",
+		"default_icon": "iitkgp.png",
 		"default_popup": "popup.html"
 	},
 	"icons": {
-		"16": "encryption_16.png",
-		"128": "encryption_128.png",
-		"256": "encryption_256.png"
+		"16": "iitkgp.png"
 	},
 	"content_scripts": [{
         "matches": ["https://erp.iitkgp.ernet.in/SSOAdministration/login.htm*"],
-        "js":         ["encryptSHA256.js"],
+        "js":         ["login.js"],
         "run_at": "document_end",
         "all_frames": true
     }],
