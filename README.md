@@ -4,6 +4,10 @@ IITKGP ERP AUTO LOGIN
 
 A chrome extension that you have to setup just one time, to automatically login to your IITKGP ERP account every time. Just download the chrome extension here, and click on the extension logo to setup your login credentials.
 
+
+<img src="demo.png">
+
+
 MIT LICENSE
 ===========
 
