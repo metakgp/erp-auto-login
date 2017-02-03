@@ -2,7 +2,7 @@ IITKGP ERP AUTO LOGIN
 =====================
 
 
-A chrome extension that you have to setup just one time, to automatically login to your IITKGP ERP account every time. Just download the chrome extension here, and click on the extension logo to setup your login credentials.
+A chrome extension that you have to setup just one time, to automatically login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk), and click on the extension logo (IIT Kharagpur's logo) to setup your login credentials. 
 
 
 <img src="demo.png">
