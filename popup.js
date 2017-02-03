@@ -1,86 +1,28 @@
 // Saves options to chrome.storage
 function save_options() {
-
-  chrome.storage.sync.set({
-      ERPIITKGP_ERPLoginID : document.getElementById('ERPLoginID').value,
-      ERPIITKGP_ERPPassword : document.getElementById('ERPPassword').value,
-      ERPIITKGP_answer1 : document.getElementById('answer1').value,
-      ERPIITKGP_answer2 : document.getElementById('answer2').value,
-      ERPIITKGP_answer3 : document.getElementById('answer3').value,
-      ERPIITKGP_question1 : document.getElementById('question1').value,
-      ERPIITKGP_question2 : document.getElementById('question2').value,
-      ERPIITKGP_question3 : document.getElementById('question3').value
-  }, function() {
-    document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ernet.in" target="_blank">ERP, IITKGP</a>.</div>';
-  });
+    chrome.storage.sync.set({
+        ERPIITKGP_ERPLoginID : document.getElementById('ERPLoginID').value,
+        ERPIITKGP_ERPPassword : document.getElementById('ERPPassword').value,
+        ERPIITKGP_answer1 : document.getElementById('answer1').value,
+        ERPIITKGP_answer2 : document.getElementById('answer2').value,
+        ERPIITKGP_answer3 : document.getElementById('answer3').value,
+        ERPIITKGP_question1 : document.getElementById('question1').value,
+        ERPIITKGP_question2 : document.getElementById('question2').value,
+        ERPIITKGP_question3 : document.getElementById('question3').value
+    }, function() {
+        document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ernet.in" target="_blank">ERP, IITKGP</a>.</div>';
+    });
 }
 
-function recovery_previous_memory()
-{
-    chrome.storage.sync.get('ERPIITKGP_ERPLoginID', function (result1) 
-    {
-        ERPLoginID = result1.ERPIITKGP_ERPLoginID;
-        chrome.storage.sync.get('ERPIITKGP_ERPPassword', function (result2) 
-        {
-            ERPPassword = result2.ERPIITKGP_ERPPassword;
-            chrome.storage.sync.get('ERPIITKGP_answer1', function (result3) 
-            {
-                answer1 = result3.ERPIITKGP_answer1;
-                chrome.storage.sync.get('ERPIITKGP_answer2', function (result4) 
-                {
-                    answer2 = result4.ERPIITKGP_answer2;
-                    chrome.storage.sync.get('ERPIITKGP_answer3', function (result5) 
-                    {
-                        answer3 = result5.ERPIITKGP_answer3;
-                        chrome.storage.sync.get('ERPIITKGP_question1', function (result6) 
-                        {
-                            question1 = result6.ERPIITKGP_question1;
-                            chrome.storage.sync.get('ERPIITKGP_question2', function (result7) 
-                            {
-                                question2 = result7.ERPIITKGP_question2;
-                                chrome.storage.sync.get('ERPIITKGP_question3', function (result8) 
-                                {
-                                    question3 = result8.ERPIITKGP_question3;
-                                    if(ERPLoginID!=undefined)
-                                    {
-                                        document.getElementById('ERPLoginID').value = ERPLoginID;
-                                    }
-                                    if(ERPPassword!=undefined)
-                                    {
-                                        document.getElementById('ERPPassword').value = ERPPassword;
-                                    }  
-                                    if(answer1!=undefined)
-                                    {
-                                    document.getElementById('answer1').value = answer1;
-                                    }
-                                    if(answer2!=undefined)
-                                    {
-                                        document.getElementById('answer2').value = answer2;
-                                    }
-                                    if(answer3!=undefined)
-                                    {
-                                        document.getElementById('answer3').value = answer3;
-                                    }
-                                    if(question1!=undefined)
-                                    {
-                                        document.getElementById('question1').value = question1; 
-                                    }
-                                    if(question2!=undefined)
-                                    {
-                                        document.getElementById('question2').value = question2;
-                                    }
-                                    if(question3!=undefined)
-                                    {
-                                        document.getElementById('question3').value = question3;
-                                    }
-                                });
-                            });
-                        });
-                    });
-                });
-            });
-        });
-    });
+function recovery_previous_memory() {
+    chrome.storage.sync.get(function(results) {
+        Object.keys(results).forEach(function(key) {
+            console.log(results);
+            if(results[key] && document.getElementById(key.substring(10, key.length))) {
+                document.getElementById(key.substring(10, key.length)).value = results[key];
+            }
+        })
+    })
 }
 
 function reset_options()
