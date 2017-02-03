@@ -41,14 +41,38 @@ function recovery_previous_memory()
                                 chrome.storage.sync.get('ERPIITKGP_question3', function (result8) 
                                 {
                                     question3 = result8.ERPIITKGP_question3;
-                                    document.getElementById('ERPLoginID').value = ERPLoginID;
-                                    document.getElementById('ERPPassword').value = ERPPassword;
+                                    if(ERPLoginID!=undefined)
+                                    {
+                                        document.getElementById('ERPLoginID').value = ERPLoginID;
+                                    }
+                                    if(ERPPassword!=undefined)
+                                    {
+                                        document.getElementById('ERPPassword').value = ERPPassword;
+                                    }  
+                                    if(answer1!=undefined)
+                                    {
                                     document.getElementById('answer1').value = answer1;
-                                    document.getElementById('answer2').value = answer2;
-                                    document.getElementById('answer3').value = answer3;
-                                    document.getElementById('question1').value = question1; 
-                                    document.getElementById('question2').value = question2;
-                                    document.getElementById('question3').value = question3;
+                                    }
+                                    if(answer2!=undefined)
+                                    {
+                                        document.getElementById('answer2').value = answer2;
+                                    }
+                                    if(answer3!=undefined)
+                                    {
+                                        document.getElementById('answer3').value = answer3;
+                                    }
+                                    if(question1!=undefined)
+                                    {
+                                        document.getElementById('question1').value = question1; 
+                                    }
+                                    if(question2!=undefined)
+                                    {
+                                        document.getElementById('question2').value = question2;
+                                    }
+                                    if(question3!=undefined)
+                                    {
+                                        document.getElementById('question3').value = question3;
+                                    }
                                 });
                             });
                         });
