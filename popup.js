@@ -49,7 +49,6 @@ function reset_options()
     });
 }
 
-
 document.getElementById('save').addEventListener('click',save_options);
 document.getElementById('reset').addEventListener('click',reset_options);
 recovery_previous_memory();
