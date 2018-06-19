@@ -10,7 +10,7 @@ function save_options() {
         ERPIITKGP_question2 : document.getElementById('question2').value,
         ERPIITKGP_question3 : document.getElementById('question3').value
     }, function() {
-        document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ernet.in" target="_blank">ERP, IITKGP</a>.</div>';
+        document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
     });
 }
 
@@ -45,7 +45,7 @@ function reset_options()
         ERPIITKGP_question2 : document.getElementById('question2').value,
         ERPIITKGP_question3 : document.getElementById('question3').value
     }, function() {
-      document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been reset. Open <a href="https://erp.iitkgp.ernet.in" target="_blank">ERP, IITKGP</a>.</div>';
+      document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been reset. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
     });
 }
 

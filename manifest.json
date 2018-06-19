@@ -12,7 +12,7 @@
 		"16": "iitkgp.png"
 	},
 	"content_scripts": [{
-        "matches": ["https://erp.iitkgp.ernet.in/SSOAdministration/login.htm*"],
+        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/login.htm*"],
         "js":         ["login.js"],
         "run_at": "document_end",
         "all_frames": true
