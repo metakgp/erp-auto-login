@@ -47,7 +47,7 @@ var enterData = function(authData) {
 	    }
 	}
 
-	xhttp.open("POST", "https://erp.iitkgp.ernet.in/SSOAdministration/getSecurityQues.htm", true);
+	xhttp.open("POST", "https://erp.iitkgp.ac.in/SSOAdministration/getSecurityQues.htm", true);
 	var params="user_id=" + authData['ERPIITKGP_ERPLoginID'];
 	xhttp.setRequestHeader("Accept", "text/plain");
 	xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
