@@ -44,7 +44,7 @@ var enterData = function(authData) {
 			}
 
 			document.forms[0].submit();
-	    }
+    }
 	}
 
 	xhttp.open("POST", "https://erp.iitkgp.ac.in/SSOAdministration/getSecurityQues.htm", true);
