@@ -3,7 +3,7 @@
 
 	"name": "IITKGP ERP Auto-login",
 	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
-	"version": "1.4",
+	"version": "1.5",
 	"browser_action": {
 		"default_icon": "iitkgp.png",
 		"default_popup": "popup.html"
@@ -19,6 +19,11 @@
     }, {
         "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/home.htm*"],
         "js":         ["logged_in.js"],
+        "run_at": "document_end",
+        "all_frames": true
+    }, {
+        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/logoutmsg.htm"],
+        "js":         ["timed_out.js"],
         "run_at": "document_end",
         "all_frames": true
     }],
