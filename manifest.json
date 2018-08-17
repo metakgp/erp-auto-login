@@ -31,7 +31,7 @@
         "js": ["skip-form.js"]
     }],
     "background": {
-      "scripts": [ "popup.js" ]
+      "scripts": ["popup.js"]
    	},
 	"permissions": [
 		"activeTab",
