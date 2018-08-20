@@ -1,3 +1,45 @@
+$("#ERPLoginID").blur(function()
+{
+    var roll = $("#ERPLoginID").val();
+
+    if (roll=="" || roll==null){
+        alert("Insert the roll number!");
+        return;
+    }
+
+    var que1 = "";
+    var que2 = "";
+    var que3 = "";
+    var i=0;
+    while(que1 == "" || que2 == "" || que3 == ""){
+        if (i==10)
+            break;
+
+        var request = $.ajax({
+            url: "https://erp.iitkgp.ac.in/SSOAdministration/getSecurityQues.htm",
+            type: "POST",
+            cache: false,
+            data: "user_id=" + roll,
+            dataType: "text"
+        });
+        request.done(function(response) {
+            if (que1==""){
+                que1=response;
+            }
+            else if(que2=="" && response!=que1){
+                que2=response;
+            }
+            else if(response!=que1 && response!=que2){
+                que3=response;
+                $("#question1").val(que1);
+                $("#question2").val(que2);
+                $("#question3").val(que3);
+            }
+        });
+        i++;
+    }
+});
+
 // Saves options to chrome.storage
 function save_options() {
     chrome.storage.sync.set({
@@ -52,3 +94,4 @@ function reset_options()
 document.getElementById('save').addEventListener('click',save_options);
 document.getElementById('reset').addEventListener('click',reset_options);
 recovery_previous_memory();
+

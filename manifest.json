@@ -26,15 +26,17 @@
         "js":         ["timed_out.js"],
         "run_at": "document_end",
         "all_frames": true
+    }, {
+	    "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/*"],
+        "js": ["skip-form.js"]
     }],
     "background": {
-      "scripts": [ "popup.js" ]
+      "scripts": ["popup.js"]
    	},
 	"permissions": [
 		"activeTab",
 		"tabs",
 		"contextMenus",
-		"activeTab",
 		"https://ajax.googleapis.com/",
 		"storage"
 	]
