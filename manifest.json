@@ -3,7 +3,7 @@
 
 	"name": "IITKGP ERP Auto-login",
 	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
-	"version": "1.5",
+	"version": "1.6",
 	"browser_action": {
 		"default_icon": "iitkgp.png",
 		"default_popup": "popup.html"
