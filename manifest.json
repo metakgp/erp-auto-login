@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-
+	"content_security_policy": "default-src 'self' https://ajax.googleapis.com; script-src 'self' https://code.jquery.com/ https://maxcdn.bootstrapcdn.com/; img-src 'self'",
 	"name": "IITKGP ERP Auto-login",
 	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
 	"version": "1.6",
