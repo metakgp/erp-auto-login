@@ -67,7 +67,7 @@ function recovery_previous_memory() {
     })
 }
 
-function reset_options(isAuto)
+function reset_options()
 {
     document.getElementById('ERPLoginID').value = "";
     document.getElementById('ERPPassword').value = "";
@@ -87,22 +87,16 @@ function reset_options(isAuto)
         ERPIITKGP_question2 : document.getElementById('question2').value,
         ERPIITKGP_question3 : document.getElementById('question3').value
     }, function() {
-      if(isAuto) return;
       document.getElementById('status').innerHTML = '<div class="alert alert-success" role="alert">Your credentials have been reset. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
     });
 }
 
 
-document.getElementById('ERPLoginID').addEventListener('change',()=>save_options(true));
-document.getElementById('ERPPassword').addEventListener('change',()=>save_options(true));
-document.getElementById('answer1').addEventListener('change',()=>save_options(true));
-document.getElementById('answer2').addEventListener('change',()=>save_options(true));
-document.getElementById('answer3').addEventListener('change',()=>save_options(true));
-document.getElementById('question1').addEventListener('change',()=>save_options(true));
-document.getElementById('question2').addEventListener('change',()=>save_options(true));
-document.getElementById('question3').addEventListener('change',()=>save_options(true));
+$( document ).ready(function(){
+    ['ERPLoginID', 'ERPPassword', 'answer1', 'answer2', 'answer3', 'question1', 'question2', 'question3'].forEach( (element) => {
+        document.getElementById(element).addEventListener('input',()=>save_options());
+    });
 
-document.getElementById('save').addEventListener('click',save_options);
-document.getElementById('reset').addEventListener('click',reset_options);
-recovery_previous_memory();
-
+    document.getElementById('reset').addEventListener('click',reset_options);
+    recovery_previous_memory();
+});
