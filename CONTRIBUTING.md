@@ -26,7 +26,7 @@ If you face any reproducable problem while launching the game or any feature you
 
 It is expected that you will follow the below guidelines while creating issues:
 
-https://wiredcraft.com/blog/how-we-write-our-github-issues
+https://wiredcraft.com/blog/how-we-write-our-github-issues [*[archive]*](http://archive.is/24BSK)
 
 ## Sending a PR
 
@@ -34,8 +34,8 @@ While sending a PR, always remember not to send one from your master branch; it'
 
 It is highly recommended to follow the below guidelines while writing commits and sending PRs:
 
-- https://blog.github.com/2015-01-21-how-to-write-the-perfect-pull-request/
-- https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503
+- https://blog.github.com/2015-01-21-how-to-write-the-perfect-pull-request/ [*[archive]*](http://archive.is/BbIbh)
+- https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503 [*[archive]*](http://archive.is/W1h2O)
 
 ## Communication
 
