@@ -16,6 +16,11 @@
         "js":         ["login.js"],
         "run_at": "document_end",
         "all_frames": true
+    },{
+	        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/auth.htm*"],
+	        "js":         ["login.js"],
+	        "run_at": "document_end",
+	        "all_frames": true
     }, {
         "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/home.htm*"],
         "js":         ["logged_in.js"],
