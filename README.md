@@ -15,12 +15,12 @@ Mobile users can also use erp auto login using browsers like **Yandex** and **Ki
   2. Head over to [Erp auto login on chrome Web Store](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk)
   3. Now click on Desktop version   
 
-    [yandex-desktop-version](instruction_imgaes/yandex_desktop.jpg)
+      <img src="instruction_images/yandex_desktop.jpg" width="30%" />
 
   4. Now click on **add to chrome** to add the extension
   5. Go to extensions and select erp auto login
 
-    [yandex-extensions](instruction_imgaes/yandex_extensions.jpg)
+      <img src="instruction_images/yandex_extensions.jpg" width="30%" />
 
   6. Enter your details
 
@@ -31,10 +31,10 @@ Mobile users can also use erp auto login using browsers like **Yandex** and **Ki
   3. Now click on **add to chrome** to add the extension
   4. Click on three-dot menu on top right, scroll below and select **erp auto login**
 
-    [kiwi-extensions](instruction_imgaes/kiwi_extensions.jpg)
+      <img src="instruction_images/kiwi_extensions.jpg" width="30%" />
 
   5. Enter your details
 
 ## Contributing
 
-Please read CONTRIBUTING.md guide to know more.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) guide to know more.
