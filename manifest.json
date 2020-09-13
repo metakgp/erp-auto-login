@@ -38,7 +38,13 @@
     "background": {
       "scripts": ["jquery-3.3.1.min.js","popup.js"]
    	},
+		"applications":{
+			"gecko" :{
+				"id" : "erp_auto_login@metakgp.com"
+			}
+		},
 	"permissions": [
+		"https://erp.iitkgp.ac.in/*",
 		"activeTab",
 		"tabs",
 		"contextMenus",
