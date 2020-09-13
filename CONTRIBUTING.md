@@ -16,7 +16,7 @@ A helpful resource for this project is https://developer.chrome.com/extensions/f
 
 ## Choosing issues
 
-It is recommended to go through the issue tabs, then run the program once and look for the easy issues.
+It is recommended to go through the issue tabs once you run the program and look for the easy issues.
 
 If an issue is not assigned; follow through the comments, ask queries about it and then start working on it.
 
