@@ -8,7 +8,7 @@ Follow the golder rule:
 
 ## First Time
 
-The first thing to do always is to install the extension and note how it works. One of the best ways to do this is to launch the application and go through the files that it launches in the sequential manner.
+The first thing to do always is to install the extension and note how it works. One of the best ways to do this is to launch the application and go through the files that it launches sequentially.
 
 Also take a note of the coding style and dependencies that the project follows.
 
@@ -16,7 +16,7 @@ A helpful resource for this project is https://developer.chrome.com/extensions/f
 
 ## Choosing issues
 
-It is recommended to go through the issues tab once you have ran the program once and look for easy issues.
+It is recommended to go through the issue tabs once you run the program and look for the easy issues.
 
 If an issue is not assigned; follow through the comments, ask queries about it and then start working on it.
 
