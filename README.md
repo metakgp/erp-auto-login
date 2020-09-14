@@ -11,6 +11,9 @@ This extension can aslo be added to Firefox. The steps to follow for the same ar
 1. Download the `erp-auto-login_ff.xpi` file.
 2. Open Firefox and go to `about:addons` or `Ctrl+Shift+A`.
 3. Click on the settings (gear) icon and select `Install Add-on From File`.
+
+      <img src="instruction_images/firefox.png" width="90%" />
+
 4. Select the above downloaded file and click open.
 5. Give the permissions and you are done. 
 
