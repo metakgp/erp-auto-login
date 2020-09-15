@@ -39,9 +39,9 @@ It is highly recommended to follow the below guidelines while writing commits an
 
 ## How to make a .xpi file
 
-A xpi file is simply a zip file. The following steps show how to make the extention into a .xpi file: 
+A xpi file is simply a zip file. The following steps show how to make the extension into a .xpi file: 
 
-1. Open a terminal inside the the repository. 
+1. Open a terminal **inside** the the folder *erp-auto-login* (after cloning it). 
 
 2. Enter this command to compress the files into a .zip file, while excluding the unnecessary files -
    
