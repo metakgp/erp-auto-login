@@ -6,7 +6,7 @@ A chrome extension that has to be set up just one time for automatic login to yo
 
 ## How to add this extension to Firefox
 
-This extension can aslo be added to Firefox. The steps to follow for the same are:
+This extension can also be added to Firefox. The steps to follow for the same are:
 
 1. Download the `erp-auto-login_ff.xpi` file.
 2. Open Firefox and go to `about:addons` or `Ctrl+Shift+A`.
