@@ -37,6 +37,21 @@ It is highly recommended to follow the below guidelines while writing commits an
 - https://blog.github.com/2015-01-21-how-to-write-the-perfect-pull-request/ [*[archive]*](http://archive.is/BbIbh)
 - https://code.likeagirl.io/useful-tips-for-writing-better-git-commit-messages-808770609503 [*[archive]*](http://archive.is/W1h2O)
 
+## How to make Firefox Addon Package (.xpi) file
+
+A xpi file is simply a zip file. The following steps show how to make the extension into a .xpi file: 
+
+1. Open a terminal **inside** the the folder *erp-auto-login* (after cloning it). 
+
+2. Enter this command to compress the files into a .zip file, while excluding the unnecessary files -
+   
+   `zip -r  erp-auto-login_ff.zip * -x "*.git*" "instruction_images/*"`
+
+3. Now enter the following command to rename the .zip file to a .xpi file -
+
+    `mv erp-auto-login_ff.zip erp-auto-login_ff.xpi`
+
+4.  You have successfully packed the extension into a xpi file :)
 ## Communication
 
 Please join the [gitter channel](https://gitter.im/erp-auto-login/Lobby) for communication regarding the project.
