@@ -36,6 +36,17 @@ $("#ERPLoginID").blur(function() {
   }
 });
 
+
+function show_open_if_already_saved() {
+  chrome.storage.sync.get(results => {
+    chrome.extension.getBackgroundPage().console.log("results are  ", results);
+    let values = Object.values(results);
+    if (!values.includes(""))
+      document.getElementById("status").innerHTML =
+        '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
+  });
+}
+
 // Saves options to chrome.storage
 function save_options() {
   chrome.storage.sync.set(
@@ -50,8 +61,10 @@ function save_options() {
       ERPIITKGP_question3: document.getElementById("question3").value
     },
     function() {
+      show_open_if_already_saved();
+
       document.getElementById("status").innerHTML =
-        '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
+        '<div class="alert alert-success" role="alert">Changes saved.</div>';
     }
   );
 }
@@ -71,15 +84,6 @@ function recovery_previous_memory() {
   });
 }
 
-function show_open_if_already_saved() {
-  chrome.storage.sync.get(results => {
-    chrome.extension.getBackgroundPage().console.log("results are  ", results);
-    let values = Object.values(results);
-    if (!values.includes(""))
-      document.getElementById("status").innerHTML =
-        '<div class="alert alert-success" role="alert">Your credentials have been saved. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
-  });
-}
 
 function reset_options() {
   document.getElementById("ERPLoginID").value = "";
@@ -103,7 +107,7 @@ function reset_options() {
     },
     function() {
       document.getElementById("status").innerHTML =
-        '<div class="alert alert-success" role="alert">Your credentials have been reset. Open <a href="https://erp.iitkgp.ac.in" target="_blank">ERP, IITKGP</a>.</div>';
+        '<div class="alert alert-success" role="alert">Your credentials have been reset.</div>';
     }
   );
 }
