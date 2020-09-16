@@ -64,7 +64,7 @@ function save_options() {
       show_open_if_already_saved();
 
       document.getElementById("status").innerHTML =
-        '<div class="alert alert-success" role="alert">Changes saved.</div>';
+        '<div class="alert alert-info" role="alert">Changes saved.</div>';
     }
   );
 }
@@ -107,7 +107,7 @@ function reset_options() {
     },
     function() {
       document.getElementById("status").innerHTML =
-        '<div class="alert alert-success" role="alert">Your credentials have been reset.</div>';
+        '<div class="alert alert-info" role="alert">Your credentials have been reset.</div>';
     }
   );
 }
@@ -127,7 +127,6 @@ $(document).ready(function() {
       .getElementById(element)
       .addEventListener("input", () => save_options());
   });
-  show_open_if_already_saved();
   document.getElementById("reset").addEventListener("click", reset_options);
   recovery_previous_memory();
 });
