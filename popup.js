@@ -127,6 +127,7 @@ $(document).ready(function() {
       .getElementById(element)
       .addEventListener("input", () => save_options());
   });
+  show_open_if_already_saved();
   document.getElementById("reset").addEventListener("click", reset_options);
   recovery_previous_memory();
 });
