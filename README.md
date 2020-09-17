@@ -1,27 +1,14 @@
 IITKGP ERP AUTO LOGIN
 =====================
-A browser extension that has to be set up just one time for automatic login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk), and click on the extension logo (IIT Kharagpur's logo) to set up your login credentials.
+A browser extension that has to be set up just one time for automatic login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk) or [install the firefox addon](https://addons.mozilla.org/addon/iitkgp-erp-auto-login/), and click on the extension logo (IIT Kharagpur's logo) to set up your login credentials.
 
 <img src="instruction_images/demo.png">
-
-## How to add this extension to Firefox
-
-This extension can also be added to Firefox. The steps to follow for the same are:
-
-1. Download the `erp-auto-login_ff.xpi` file.
-2. Open Firefox and go to `about:addons` or `Ctrl+Shift+A`.
-3. Click on the settings (gear) icon and select `Install Add-on From File`.
-
-      <img src="instruction_images/firefox.png" width="90%" />
-
-4. Select the above downloaded file and click open.
-5. Give the permissions and you are done.
 
 ## How to use this extension on Mobile
 
 Mobile users can also use erp auto login using browsers like **Yandex** and **Kiwi**. The steps to follow for the browsers respectively are:-
 
-- ### Yandex Browser
+### Yandex Browser
 
   1. Download Yandex Browser from Play Store
   2. Head over to [Erp auto login on chrome Web Store](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk)
@@ -36,7 +23,7 @@ Mobile users can also use erp auto login using browsers like **Yandex** and **Ki
 
   6. Enter your details
 
-- ### Kiwi Browser
+### Kiwi Browser
 
   1. Download Kiwi Browser from Play Store
   2. Head over to [Erp auto login on chrome Web Store](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk)
