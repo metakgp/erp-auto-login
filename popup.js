@@ -107,7 +107,7 @@ function reset_options() {
     },
     function() {
       document.getElementById("status").innerHTML =
-        '<div class="alert alert-info" role="alert">Your credentials have been reset.</div>';
+        '<div class="alert alert-warning" role="alert">Your credentials have been reset.</div>';
     }
   );
 }
