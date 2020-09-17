@@ -39,7 +39,7 @@ $("#ERPLoginID").blur(function() {
 
 function show_open_if_already_saved() {
   chrome.storage.sync.get(results => {
-    chrome.extension.getBackgroundPage().console.log("results are  ", results);
+    // chrome.extension.getBackgroundPage().console.log("results are  ", results);
     let values = Object.values(results);
     if (!values.includes(""))
       document.getElementById("status").innerHTML =
