@@ -2,7 +2,14 @@ IITKGP ERP AUTO LOGIN
 =====================
 A browser extension that has to be set up just one time for automatic login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk) or [install the firefox addon](https://addons.mozilla.org/addon/iitkgp-erp-auto-login/), and click on the extension logo (IIT Kharagpur's logo) to set up your login credentials.
 
-<img src="instruction_images/demo.png">
+   <img src="instruction_images/demo.png" />
+
+**Note:- This is not an official application by IIT Kharagpur. This is the result of hardwork and enthusiasm by [Metakgp](https://metakgp.github.io/).**
+
+
+# Credentials Security
+
+**We don't store your credentials.** This extension uses [localStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API#localStorage) to store your credentials **on your local machine**. The [path to these credentials](https://stackoverflow.com/questions/8634058/where-the-sessionstorage-and-localstorage-stored) and how they are stored is *browser specific*.
 
 ## How to use this extension on Mobile
 
