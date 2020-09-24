@@ -10,6 +10,8 @@ Follow the golder rule:
 
 The first thing to do always is to install the extension and note how it works. One of the best ways to do this is to launch the application and go through the files that it launches sequentially.
 
+NOTE - For testing the development version, it is recommended to disable the original extension as it might cause confusion and log into the ERP even when development version might not be working properly.
+
 Also take a note of the coding style and dependencies that the project follows.
 
 A helpful resource for this project is https://developer.chrome.com/extensions/faq
