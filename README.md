@@ -4,7 +4,7 @@ A browser extension that has to be set up just one time for automatic login to y
 
    <img src="instruction_images/demo.png" />
 
-**Note:- This is not an official application by IIT Kharagpur. This is the result of hardwork and enthusiasm by [Metakgp](https://metakgp.github.io/).**
+**Note:- This is not an official application by IIT Kharagpur. This is the result of hard work and enthusiasm by @athityakumar and is maintained by [Metakgp](https://metakgp.github.io/).**
 
 
 # Credentials Security
