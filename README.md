@@ -1,6 +1,6 @@
 IITKGP ERP AUTO LOGIN
 =====================
-A browser extension that has to be set up just one time for automatic login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk) or [install the firefox addon](https://addons.mozilla.org/addon/iitkgp-erp-auto-login/), and click on the extension logo (IIT Kharagpur's logo) to set up your login credentials.
+A browser extension that needs to be set up just one time for automatic login to your IITKGP ERP account every time. Just [install the chrome extension](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk) or [install the firefox addon](https://addons.mozilla.org/addon/iitkgp-erp-auto-login/), and click on the extension logo (IIT Kharagpur's logo) to set up your login credentials.
 
    <img src="instruction_images/demo.png" />
 
@@ -17,7 +17,7 @@ Mobile users can also use erp auto login using browsers like **Yandex** and **Ki
 
 ### Yandex Browser
 
-  1. Download Yandex Browser from Play Store
+  1. Download Yandex Browser from the Play Store
   2. Head over to [Erp auto login on chrome Web Store](https://chrome.google.com/webstore/detail/iitkgp-erp-auto-login/gdickphilmdekcbmpjmbnbikchaecbdk)
   3. Now click on Desktop version   
 
