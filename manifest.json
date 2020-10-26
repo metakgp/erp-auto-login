@@ -5,11 +5,13 @@
 	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
 	"version": "1.9",
 	"browser_action": {
-		"default_icon": "iitkgp.png",
+		"default_icon": "assets/logo16.png",
 		"default_popup": "popup.html"
 	},
 	"icons": {
-		"16": "iitkgp.png"
+		"16": "assets/logo16.png",
+		"48": "assets/logo48.png",
+		"128": "assets/logo128.png"
 	},
 	"content_scripts": [{
         "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/login.htm*"],

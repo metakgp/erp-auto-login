@@ -9,11 +9,46 @@
     		min-width:800px;
 				overflow: hidden;
 		}
+
+		#logo{
+			position: relative;
+			top: -60px;
+			left: 5px;
+			/* top: -60px; */
+			width: 128px;
+			height: 128px;
+			transform: scale(0.9);
+			margin: 0;
+			z-index: -1;
+		}
+
+		#Heading{
+			position: absolute;
+			/* display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center; */
+			top: 15px;
+			width: 60%;
+			right: 15px;
+		}
+
+		#Heading h3{
+			font-size: 2.15em;
+			/* font-size: 2em;
+			font-weight: 600; */
+		}
+
+		
 	</style>
 	<body>
-
-			<h3 style="text-align: center;">Enter your ERP credentials here</h3>
-			<h5 style="text-align: center;">Saves As You Type</h5>
+		<header>
+			<div id="logo"><img src="assets/logo256.png"></div>
+			<div id="Heading">
+				<h3 style="text-align: center;">Enter your ERP credentials here</h3>
+				<h5 style="text-align: center;">Saves As You Type</h5>
+			</div>
+		</header>
 			<div class="form-horizontal row">
 				<div class="well container">
 					<div class="form-group col-xs-7">
@@ -46,7 +81,7 @@
 				</div>
 			</div>
 			<div id="status" style="text-align: center;"></div>
-		</div>
+		</header>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="jquery-3.3.1.min.js"></script>
