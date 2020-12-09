@@ -85,30 +85,34 @@ function recovery_previous_memory() {
 
 
 function reset_options() {
-  document.getElementById("ERPLoginID").value = "";
-  document.getElementById("ERPPassword").value = "";
-  document.getElementById("answer1").value = "";
-  document.getElementById("answer2").value = "";
-  document.getElementById("answer3").value = "";
-  document.getElementById("question1").value = "";
-  document.getElementById("question2").value = "";
-  document.getElementById("question3").value = "";
-  chrome.storage.sync.set(
-    {
-      ERPIITKGP_ERPLoginID: document.getElementById("ERPLoginID").value,
-      ERPIITKGP_ERPPassword: document.getElementById("ERPPassword").value,
-      ERPIITKGP_answer1: document.getElementById("answer1").value,
-      ERPIITKGP_answer2: document.getElementById("answer2").value,
-      ERPIITKGP_answer3: document.getElementById("answer3").value,
-      ERPIITKGP_question1: document.getElementById("question1").value,
-      ERPIITKGP_question2: document.getElementById("question2").value,
-      ERPIITKGP_question3: document.getElementById("question3").value
-    },
-    function() {
-      document.getElementById("status").innerHTML =
-        '<div class="alert alert-warning" role="alert">Your credentials have been reset.</div>';
-    }
-  );
+  if (window.confirm("Do you want to reset your credentials?")) {
+    document.getElementById("ERPLoginID").value = "";
+    document.getElementById("ERPPassword").value = "";
+    document.getElementById("answer1").value = "";
+    document.getElementById("answer2").value = "";
+    document.getElementById("answer3").value = "";
+    document.getElementById("question1").value = "";
+    document.getElementById("question2").value = "";
+    document.getElementById("question3").value = "";
+
+    chrome.storage.sync.set(
+      {
+        ERPIITKGP_ERPLoginID: document.getElementById("ERPLoginID").value,
+        ERPIITKGP_ERPPassword: document.getElementById("ERPPassword").value,
+        ERPIITKGP_answer1: document.getElementById("answer1").value,
+        ERPIITKGP_answer2: document.getElementById("answer2").value,
+        ERPIITKGP_answer3: document.getElementById("answer3").value,
+        ERPIITKGP_question1: document.getElementById("question1").value,
+        ERPIITKGP_question2: document.getElementById("question2").value,
+        ERPIITKGP_question3: document.getElementById("question3").value
+      },
+      function() {
+        document.getElementById("status").innerHTML =
+          '<div class="alert alert-warning" role="alert">Your credentials have been reset.</div>';
+      }
+    );
+  }
+
 }
 
 $(document).ready(function() {
