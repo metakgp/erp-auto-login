@@ -1,4 +1,3 @@
-console.log('I am running!');
 var keys = [
 	'ERPIITKGP_ERPLoginID',
 	'ERPIITKGP_ERPPassword',
@@ -16,7 +15,11 @@ var inputTags = {
 };
 
 chrome.storage.sync.get(keys, function(authData) {
-	enterData(authData);
+	if (authData["ERPIITKGP_ERPLoginID"] && authData["ERPIITKGP_ERPPassword"]) {
+		enterData(authData);
+	} else {
+		console.debug("ERP auto login skipped - credentials have not been set!");
+	}
 });
 
 function stopper(){
