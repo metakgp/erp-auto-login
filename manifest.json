@@ -3,7 +3,7 @@
 
 	"name": "IITKGP ERP Auto-login",
 	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
-	"version": "2.0",
+	"version": "2.1",
 	"browser_action": {
 		"default_icon": "assets/logo16.png",
 		"default_popup": "popup.html"
@@ -42,9 +42,6 @@
    	},
 	"permissions": [
 		"https://erp.iitkgp.ac.in/*",
-		"activeTab",
-		"tabs",
-		"contextMenus",
 		"https://ajax.googleapis.com/",
 		"storage"
 	]
