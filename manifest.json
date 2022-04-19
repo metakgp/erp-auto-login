@@ -40,10 +40,6 @@
       "js": ["timed_out.js"],
       "run_at": "document_end",
       "all_frames": true
-    },
-    {
-      "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/*"],
-      "js": ["skip-form.js"]
     }
   ],
   "permissions": ["scripting", "storage"],
