@@ -1,48 +1,50 @@
 {
-	"manifest_version": 2,
+  "manifest_version": 3,
 
-	"name": "IITKGP ERP Auto-login",
-	"description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
-	"version": "2.1",
-	"browser_action": {
-		"default_icon": "assets/logo16.png",
-		"default_popup": "popup.html"
-	},
-	"icons": {
-		"16": "assets/logo16.png",
-		"48": "assets/logo48.png",
-		"128": "assets/logo128.png"
-	},
-	"content_scripts": [{
-        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/login.htm*"],
-        "js":         ["login.js"],
-        "run_at": "document_end",
-        "all_frames": true
-    },{
-	        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/auth.htm*"],
-	        "js":         ["login.js"],
-	        "run_at": "document_end",
-	        "all_frames": true
-    }, {
-        "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/home.htm*"],
-        "js":         ["logged_in.js"],
-        "run_at": "document_end",
-        "all_frames": true
-    }, {
-        "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/logoutmsg.htm"],
-        "js":         ["timed_out.js"],
-        "run_at": "document_end",
-        "all_frames": true
-    }, {
-	    "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/*"],
-        "js": ["skip-form.js"]
-    }],
-    "background": {
-      "scripts": ["jquery-3.3.1.min.js","popup.js"]
-   	},
-	"permissions": [
-		"https://erp.iitkgp.ac.in/*",
-		"https://ajax.googleapis.com/",
-		"storage"
-	]
+  "name": "IITKGP ERP Auto-login",
+  "description": "A tool that you have to setup just one time, to automatically login to your ERP every time.",
+  "version": "2.2",
+  "action": {
+    "default_icon": "assets/logo16.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/logo16.png",
+    "48": "assets/logo48.png",
+    "128": "assets/logo128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self'"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/login.htm*"],
+      "js": ["login.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/auth.htm*"],
+      "js": ["login.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://erp.iitkgp.ac.in/IIT_ERP3/home.htm*"],
+      "js": ["logged_in.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://erp.iitkgp.ac.in/SSOAdministration/logoutmsg.htm"],
+      "js": ["timed_out.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "permissions": ["scripting", "storage"],
+  "host_permissions": [
+    "https://erp.iitkgp.ac.in/*",
+    "https://ajax.googleapis.com/"
+  ]
 }
