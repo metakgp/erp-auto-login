@@ -56,8 +56,19 @@ var enterData = function(authData) {
 				answerInput.value = authData['ERPIITKGP_answer3'];
 				sessionStorage.setItem("q3", "1");
 			}
-
-			document.forms[0].submit();
+			const otpdiv = document.getElementById("emailotpdiv");
+			if (otpdiv.className.includes("hidden")) {
+				// submit only if user is on campus network
+				document.forms[0].submit();
+			}
+			// if (document.getElementById("emailotpdiv"))
+			// detect_network(function(on_campus_network) {
+			// 	if (on_campus_network) {
+			// 		console.log("User is on campus network");
+			// 	} else {
+			// 		console.log("User is not on campus network");
+			// 	}
+			// });
     }
 	}
 	stopper();
