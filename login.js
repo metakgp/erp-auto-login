@@ -61,14 +61,6 @@ var enterData = function(authData) {
 				// submit only if user is on campus network
 				document.forms[0].submit();
 			}
-			// if (document.getElementById("emailotpdiv"))
-			// detect_network(function(on_campus_network) {
-			// 	if (on_campus_network) {
-			// 		console.log("User is on campus network");
-			// 	} else {
-			// 		console.log("User is not on campus network");
-			// 	}
-			// });
     }
 	}
 	stopper();
