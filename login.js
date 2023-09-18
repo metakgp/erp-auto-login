@@ -59,6 +59,9 @@ var enterData = function(authData) {
 			detect_network(function(on_campus_network) {
 				if (on_campus_network) {
 					document.forms[0].submit();
+				} else {
+					var sendOtpButton = document.getElementById("getotp");
+					sendOtpButton.click();
 				}
 			});
     }
