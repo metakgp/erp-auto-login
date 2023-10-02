@@ -56,8 +56,14 @@ var enterData = function(authData) {
 				answerInput.value = authData['ERPIITKGP_answer3'];
 				sessionStorage.setItem("q3", "1");
 			}
-
-			document.forms[0].submit();
+			detect_network(function(on_campus_network) {
+				if (on_campus_network) {
+					document.forms[0].submit();
+				} else {
+					var sendOtpButton = document.getElementById("getotp");
+					sendOtpButton.click();
+				}
+			});
     }
 	}
 	stopper();
@@ -68,4 +74,19 @@ var enterData = function(authData) {
 	xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
 	xhttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
 	xhttp.send(params);
+}
+
+function detect_network(callback) {
+	fetch("https://campus.kossiitkgp.org/")
+	.then((blob) => blob.json())
+	.then((response) => {
+		if (response.is_inside_kgp) {
+			callback(true);
+		} else {
+			callback(false);
+		}
+	})
+	.catch(() => {
+		callback(false);
+	});
 }
